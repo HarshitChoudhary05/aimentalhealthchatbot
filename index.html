@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Botpress Integration</title>
+  <style>
+    /* General styling for responsiveness */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: linear-gradient(120deg, #6a11cb, #2575fc);
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    .chat-container {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .chat-header {
+      background: #2575fc;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      font-size: 1.2rem;
+    }
+
+    .chat-content {
+      padding: 20px;
+      text-align: center;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    /* Responsive breakpoints */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      .chat-content {
+        font-size: 0.9rem;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Chat Interface</h1>
+  </header>
+  
+  <div class="chat-container">
+    <div class="chat-header">Chatbot</div>
+    <div class="chat-content">
+      Your Botpress chatbot will appear here.
+    </div>
+  </div>
+
+  <!-- Botpress Scripts -->
+  <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+  <script src="https://files.bpcontent.cloud/2024/11/25/10/20241125103348-IAB0LY9K.js"></script>
+</body>
+</html>
